@@ -39,7 +39,12 @@ try {
 	
 			res.write('\n********* Body *********\n');
 			res.write(body);
+
+			res.write('\n\n********* Time *********\n');
+			res.write(Date.now().toString());
 			res.write('\n\n************************\n');
+
+
 			res.end();
 		});
 		
