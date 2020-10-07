@@ -27,7 +27,7 @@ try {
 
 			res.setHeader("content-type","text/plain");
 
-			res.write('\n************************\n');
+			res.write('************************\n');
 			res.write(`HTTP Version :  ${req.httpVersion} \n`);
 			res.write(`Method :   ${req.method} \n`);
 			res.write(`URL Path :  ${req.url} \n`);
@@ -40,7 +40,7 @@ try {
 			res.write('\n********* Body *********\n');
 			res.write(body);
 
-			res.write('\n\n********* Time *********\n');
+			res.write('\n********* Time *********\n');
 			res.write(Date.now().toString());
 			res.write('\n\n************************\n');
 
